@@ -23,7 +23,16 @@
     "lint": "tsc --noEmit && eslint ./src && prettier -c src",
     "lint:fix": "eslint --fix ./src && prettier -w src"
   },
+  "dependencies": {
+    "ink": "^6.0.1",
+    "meow": "^13.2.0",
+    "react": "^19.1.0"
+  },
   "devDependencies": {
+    "@sindresorhus/tsconfig": "^7.0.0",
+    "@types/react": "^19.1.8",
+    "chalk": "^5.4.1",
+    "ink-testing-library": "^4.0.0",
     "@eslint/js": "^9.23.0",
     "@typescript-eslint/eslint-plugin": "^8.27.0",
     "@vitest/coverage-v8": "^3.0.9",
