@@ -1,6 +1,6 @@
-# minimal-typescript-node-esm-starter
+# ink-cli-starter
 
-Welcome to the minimal TypeScript ESM (ECMAScript Modules) starter repository! This project provides a streamlined setup for building TypeScript projects with ECMAScript modules support.
+React-based Terminal UI Starter, using Ink v6 and React 19 (ESM)
 
 ## Feature
 - Minimal setup with few config for TypeScript
@@ -15,7 +15,7 @@ Welcome to the minimal TypeScript ESM (ECMAScript Modules) starter repository! T
 Clone this repository to kickstart your project:
 
 ```bash
-git clone https://github.com/thaitype/minimal-typescript-node-esm-starter.git [project_name]
+git clone https://github.com/thaitype/ink-cli-starter.git [project_name]
 ```
 
 ## Installation
@@ -59,9 +59,6 @@ pnpm lint:fix
 # Format with Prettier
 pnpm format
 ```
-
-## Other runner option 
-- If you still want to use [ava](https://github.com/avajs/ava), please check out branch [with-ava-test](https://github.com/thaitype/minimal-typescript-node-esm-starter/tree/with-ava-test)
 
 ## Additional TypeScript Compiler Options
 

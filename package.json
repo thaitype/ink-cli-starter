@@ -1,24 +1,15 @@
 {
-  "name": "@thaitype/minimal-typescript-node-esm-starter",
+  "name": "@thaitype/ink-cli-starter",
   "version": "0.0.0",
-  "description": "minimal-typescript-node-esm-starter",
-  "main": "./dist/main.cjs",
-  "module": "./dist/main.js",
-  "types": "./dist/main.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/main.d.ts",
-      "import": "./dist/main.js",
-      "default": "./dist/main.cjs"
-    }
-  },
+  "description": "React-based Terminal UI Starter, using Ink v6 and React 19 (ESM)",
+  "type": "module",
   "scripts": {
-    "start": "tsx src/main.ts",
-    "dev": "tsx watch src/main.ts",
+    "start": "tsx src/cli.tsx",
+    "dev": "tsx watch src/cli.tsx",
     "test:coverage": "vitest run --coverage",
     "test": "vitest",
     "test:ci": "vitest run",
-    "build": "tsup src/main.ts --dts --format esm,cjs",
+    "build": "tsup src/cli.tsx --dts --format esm,cjs",
     "format": "prettier -w src",
     "lint": "tsc --noEmit && eslint ./src && prettier -c src",
     "lint:fix": "eslint --fix ./src && prettier -w src"
@@ -29,22 +20,22 @@
     "react": "^19.1.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.31.0",
     "@sindresorhus/tsconfig": "^7.0.0",
     "@types/react": "^19.1.8",
+    "@typescript-eslint/eslint-plugin": "^8.37.0",
+    "@vitest/coverage-v8": "^3.2.4",
     "chalk": "^5.4.1",
-    "ink-testing-library": "^4.0.0",
-    "@eslint/js": "^9.23.0",
-    "@typescript-eslint/eslint-plugin": "^8.27.0",
-    "@vitest/coverage-v8": "^3.0.9",
-    "eslint": "^9.23.0",
-    "eslint-config-prettier": "^10.1.1",
+    "eslint": "^9.31.0",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-only-warn": "^1.1.0",
-    "prettier": "^3.5.3",
-    "tsup": "^8.4.0",
-    "tsx": "^4.19.3",
-    "typescript": "^5.8.2",
-    "typescript-eslint": "^8.27.0",
-    "vitest": "^3.0.9"
+    "ink-testing-library": "^4.0.0",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.37.0",
+    "vitest": "^3.2.4"
   },
   "keywords": [],
   "author": "Thada Wangthammang",
@@ -56,7 +47,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/thaitype/minimal-typescript-node-esm-starter.git"
+    "url": "https://github.com/thaitype/ink-cli-starter.git"
   },
-  "homepage": "https://github.com/thaitype/minimal-typescript-node-esm-starter"
+  "homepage": "https://github.com/thaitype/ink-cli-starter"
 }
